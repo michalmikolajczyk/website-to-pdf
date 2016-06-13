@@ -25,3 +25,5 @@ The options can be used through query parameters. The microservice exposes all o
 ## Deployment
 
 There is a Procfile added for heroku deployment, and also a Dockerfile, which can be used to prepare a Docker image and run the microservice like that.
+
+Please set the environment variable PDFHOST to your `<hostname>:<port>`, e.g. `localhost:3000` or just `cooldomain.com`
