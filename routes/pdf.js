@@ -125,7 +125,10 @@ router.get('/', function(req, res, next) {
       setTimeout(execAndProcess.bind(this, 'rm ' + cacheObject.randomTmpFile), 15000);
       setTimeout(execAndProcess.bind(this, 'rm public/' + cacheObject.randomTmpFile), 300000);
       var host = process.env.PDFHOST || 'localhost:' + process.env.PORT;
-      return res.redirect('/pdfjs/web/viewer.html?file=' + encodeURIComponent('http://' + host + '/' + cacheObject.randomTmpFile));
+      return res.redirect('/pdfjs/web/viewer.html?file=' + encodeURIComponent(
+        (process.env.PDFHOST ? 'https://' : 'http://') +
+        host + '/' + cacheObject.randomTmpFile
+      ));
     }
     setTimeout(execAndProcess.bind(this, 'rm ' + cacheObject.randomTmpFile), 1597);
     return res.download(cacheObject.randomTmpFile, title);
