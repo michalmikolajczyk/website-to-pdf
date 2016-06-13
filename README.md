@@ -17,17 +17,13 @@ npm start
 
 ## Demo
 
-```
 [https://website-to-pdf.herokuapp.com/pdf?url=https://news.ycombinator.com](https://website-to-pdf.herokuapp.com/pdf?url=https://news.ycombinator.com)
-```
 
 ## Usage
 
 To scrape a page, generate a pdf and download it, send a request to the API, with the url as query param. As an example, simply visit the url below:
 
-```
 [http://localhost:3000/pdf?url=https://news.ycombinator.com](http://localhost:3000/pdf?url=https://news.ycombinator.com)
-```
 
 ## Options
 
