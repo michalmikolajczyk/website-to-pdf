@@ -1,11 +1,32 @@
 # Website to pdf scragarator
 
+## Install and ignite
+
+Clone the repo
+
+Install the submodules
+```
+git submodule init
+git submodule update
+```
+
+Start your engines
+```
+npm start
+```
+
+## Demo
+
+```
+[https://website-to-pdf.herokuapp.com/pdf?url=https://news.ycombinator.com](https://website-to-pdf.herokuapp.com/pdf?url=https://news.ycombinator.com)
+```
+
 ## Usage
 
 To scrape a page, generate a pdf and download it, send a request to the API, with the url as query param. As an example, simply visit the url below:
 
 ```
-[https://website-to-pdf.herokuapp.com/pdf?url=https://news.ycombinator.com](https://website-to-pdf.herokuapp.com/pdf?url=https://news.ycombinator.com)
+[http://localhost:3000/pdf?url=https://news.ycombinator.com](http://localhost:3000/pdf?url=https://news.ycombinator.com)
 ```
 
 ## Options
